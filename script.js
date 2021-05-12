@@ -11,7 +11,7 @@ fetch(url)
     console.log(json.html_url);
 
     let avatar = new Image();
-    avatar.scr = json.avatar_url;
+    avatar.src = json.avatar_url;
     body.append(avatar);
 
     let name = document.createElement('p');
@@ -31,4 +31,4 @@ fetch(url)
     }
     body.append(bio);
   })
-.catch(err => alert('Информация о пользователе недоступна'));
+.catch(err => alert('User information unavailable'));
