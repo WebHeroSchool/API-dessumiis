@@ -11,7 +11,7 @@ fetch(url)
     console.log(json.html_url);
 
     let avatar = new Image();
-    photo.scr = json.avatar_url;
+    avatar.scr = json.avatar_url;
     body.append(avatar);
 
     let name = document.createElement('p');
